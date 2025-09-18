@@ -1,120 +1,26 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Deine Landing Page</title>
-  <meta name="description" content="Kurze, knackige Beschreibung deiner Seite." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <!-- Tailwind via CDN -->
+  <title>My First Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>html{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif}</style>
 </head>
-<body class="bg-white text-slate-800">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="font-extrabold tracking-tight text-xl">DeinBrand</a>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#features" class="hover:text-slate-900">Features</a>
-        <a href="#pricing" class="hover:text-slate-900">Preise</a>
-        <a href="#contact" class="hover:text-slate-900">Kontakt</a>
-      </nav>
-      <a href="#contact" class="inline-flex items-center rounded-xl border px-3 py-2 text-sm hover:bg-slate-50">Los geht’s</a>
-    </div>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow p-4">
+    <h1 class="text-2xl font-bold">My First Website</h1>
   </header>
 
-  <!-- Hero -->
-  <section class="relative">
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-50 to-white -z-10"></div>
-    <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
-          Baue in Stunden eine <span class="bg-yellow-200 px-2 -rotate-1 inline-block">pro-aussehende</span> Website
-        </h1>
-        <p class="mt-6 text-lg text-slate-600">
-          Keine Build-Tools. Keine Hürden. Nur HTML + Tailwind. Optional mit AI-Unterstützung für Texte, Layouts & Bilder.
-        </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#contact" class="rounded-2xl bg-black text-white px-5 py-3 text-sm font-semibold">Kostenlos starten</a>
-          <a href="#features" class="rounded-2xl border px-5 py-3 text-sm">Features ansehen</a>
-        </div>
-        <p class="mt-3 text-xs text-slate-500">Keine Kreditkarte nötig.</p>
-      </div>
-      <div class="bg-white border rounded-2xl shadow-sm p-4">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Screenshot Beispielseite" class="rounded-xl w-full h-auto"/>
-      </div>
-    </div>
-  </section>
+  <main class="max-w-2xl mx-auto p-6">
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Hello World!</h2>
+      <p class="mb-4">This is my very first modern website built with HTML + Tailwind.</p>
+      <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded">Click Me</a>
+    </section>
+  </main>
 
-  <!-- Features -->
-  <section id="features" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold">Was du bekommst</h2>
-    <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <div class="border rounded-2xl p-6">
-        <h3 class="font-semibold">Schnelligkeit</h3>
-        <p class="mt-2 text-sm text-slate-600">In Minuten ein schönes Layout, dank Tailwind-Utilities.</p>
-      </div>
-      <div class="border rounded-2xl p-6">
-        <h3 class="font-semibold">Responsiv by default</h3>
-        <p class="mt-2 text-sm text-slate-600">Sieht auf Handy, Tablet und Desktop sauber aus.</p>
-      </div>
-      <div class="border rounded-2xl p-6">
-        <h3 class="font-semibold">Skalierbar</h3>
-        <p class="mt-2 text-sm text-slate-600">Später einfach auf Astro/Next.js umziehen, wenn nötig.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold">Preise</h2>
-    <div class="mt-8 grid md:grid-cols-3 gap-6">
-      <div class="border rounded-2xl p-6">
-        <p class="text-sm font-semibold text-slate-500">Starter</p>
-        <p class="mt-2 text-3xl font-extrabold">0 €</p>
-        <ul class="mt-4 text-sm text-slate-600 space-y-2">
-          <li>1 Seite</li><li>Formular</li><li>Einfaches Hosting</li>
-        </ul>
-        <a href="#contact" class="mt-6 inline-block rounded-xl border px-4 py-2 text-sm">Loslegen</a>
-      </div>
-      <div class="border rounded-2xl p-6 ring-2 ring-black">
-        <p class="text-sm font-semibold text-slate-500">Pro</p>
-        <p class="mt-2 text-3xl font-extrabold">19 €</p>
-        <ul class="mt-4 text-sm text-slate-600 space-y-2">
-          <li>Bis 5 Seiten</li><li>Custom Domain</li><li>Analytics</li>
-        </ul>
-        <a href="#contact" class="mt-6 inline-block rounded-xl bg-black text-white px-4 py-2 text-sm">Auswählen</a>
-      </div>
-      <div class="border rounded-2xl p-6">
-        <p class="text-sm font-semibold text-slate-500">Business</p>
-        <p class="mt-2 text-3xl font-extrabold">49 €</p>
-        <ul class="mt-4 text-sm text-slate-600 space-y-2">
-          <li>CMS</li><li>Blog</li><li>Prior Support</li>
-        </ul>
-        <a href="#contact" class="mt-6 inline-block rounded-xl border px-4 py-2 text-sm">Kontakt</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="max-w-3xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold">Kontakt</h2>
-    <form action="https://formspree.io/f/your-id" method="POST" class="mt-6 grid gap-4">
-      <input name="name" required placeholder="Dein Name" class="border rounded-xl px-4 py-3" />
-      <input type="email" name="email" required placeholder="Deine E-Mail" class="border rounded-xl px-4 py-3" />
-      <textarea name="message" rows="4" placeholder="Worum geht’s?" class="border rounded-xl px-4 py-3"></textarea>
-      <button class="rounded-2xl bg-black text-white px-5 py-3 text-sm font-semibold">Senden</button>
-    </form>
-    <p class="mt-3 text-xs text-slate-500">Ersetze die action-URL durch deine eigene Formspree-ID.</p>
-  </section>
-
-  <footer class="border-t">
-    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-slate-500">
-      © <span id="y"></span> DeinBrand. Alle Rechte vorbehalten.
-    </div>
+  <footer class="bg-white border-t p-4 text-sm text-gray-500 text-center">
+    © 2025 My Website
   </footer>
-  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
